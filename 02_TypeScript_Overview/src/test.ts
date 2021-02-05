@@ -1,3 +1,5 @@
+import { hasUncaughtExceptionCaptureCallback } from "process"
+
 let a = 1+2
 let b = a+1
 
