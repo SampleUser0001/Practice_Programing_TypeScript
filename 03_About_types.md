@@ -19,7 +19,7 @@ Javaで言うところのObjectとプリミティブ型の両方の親みたい�
 
 ### やってみた
 
-```ts:src/anyTypeErrorSample.ts
+```ts : src/anyTypeErrorSample.ts
 let a = 666
 let b = ['denger']
 let mayBeError = a + b
@@ -46,7 +46,7 @@ Found 1 error.
 
 ### やってみた
 
-```ts:src/useUnknown.ts
+```ts : src/useUnknown.ts
 // unknown型のサンプル
 
 let unknownTypeValue: unknown = 10
@@ -92,7 +92,7 @@ Found 1 error.
 
 ### やってみた
 
-```ts:src/useNumber.ts
+```ts : src/useNumber.ts
 // numberにアンダースコアを使って代入する。
 
 const NUMBER_UNDER_SCORE = 1_000_000

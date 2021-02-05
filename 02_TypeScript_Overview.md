@@ -21,7 +21,7 @@ npm install --save-dev typescript tslint @types/node
 ## tsconfig.json
 
 コンパイルで使う。
-```json:tsconfig.json
+```json : tsconfig.json
 {
   "compilerOptions": {
     "lib": ["es2015"],
@@ -52,7 +52,7 @@ npm install --save-dev typescript tslint @types/node
 
 TSLint（コーディングのルールを決める）の設定ファイル。
 
-```json:tslint.json
+```json : tslint.json
 {
   "defaultSeverity": "error",
   "extends": [
@@ -67,7 +67,7 @@ TSLint（コーディングのルールを決める）の設定ファイル。
 
 ## src/index.ts
 
-```ts:src/index.ts
+```ts : src/index.ts
 console.log('Hello TypeScript!')
 ```
 
