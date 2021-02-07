@@ -7,8 +7,13 @@
     - [やってみた](#やってみた-1)
   - [boolean](#boolean)
     - [リテラル型](#リテラル型)
+      - [宣言例](#宣言例)
   - [number](#number)
     - [やってみた](#やってみた-2)
+  - [bigint](#bigint)
+  - [string](#string)
+    - [宣言例](#宣言例-1)
+  - [symbol](#symbol)
   - [その他実装中に気づいたこと](#その他実装中に気づいたこと)
 
 ## any 
@@ -85,6 +90,12 @@ Found 1 error.
 ```
 …constとは違うらしいが、別の箇所で扱う（らしい）。
 
+#### 宣言例
+
+```ts 
+let b: true = true
+```
+
 ## number
 
 すべての数値型。整数も浮動小数点数も無限大もNaNもこれを使う。  
@@ -105,6 +116,30 @@ console.log(NUMBER_UNDER_SCORE)
 ittimfn@penguin:~/Practice_Programing_TypeScript/03_About_types$ node ./dist/useNumber.js
 1000000
 ```
+
+## bigint
+
+丸めエラー等が発生せず、大きい値を扱うことができる。
+
+現時点で必ずしもすべてのJavaScriptで扱えるわけではない。  
+エラーの例
+```
+ターゲットが ES2020 未満の場合、bigint リテラルは使用できません。
+```
+
+## string
+
+文字列。連結（+）やsliceが使える。
+
+### 宣言例
+
+```ts 
+let name: 'Taro' = 'Taro'
+```
+
+## symbol
+
+ES2015で導入された。
 
 ## その他実装中に気づいたこと
 
