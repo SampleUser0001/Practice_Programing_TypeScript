@@ -14,6 +14,11 @@
   - [string](#string)
     - [宣言例](#宣言例-1)
   - [symbol](#symbol)
+    - [やってみた](#やってみた-3)
+  - [Object](#object)
+    - [実装例](#実装例)
+  - [型エイリアス](#型エイリアス)
+  - [合併型/交差型](#合併型交差型)
   - [その他実装中に気づいたこと](#その他実装中に気づいたこと)
 
 ## any 
@@ -139,7 +144,163 @@ let name: 'Taro' = 'Taro'
 
 ## symbol
 
+アプリケーション全体で一意な値を宣言するときに使う型？
+
 ES2015で導入された。
+
+### やってみた
+
+``` ts : use/Symbol.ts
+let symbol_a = Symbol('hoge')
+let symbol_b = Symbol('hoge')
+
+// falseになる
+console.log(symbol_a === symbol_b)
+```
+
+## Object
+
+TypeScript的にはObjectの中身は管理しないが、メンバ変数の型を宣言しておく必要がある。  
+
+### 実装例
+
+```ts : useObject_01.ts
+let object_a: object = {
+  b: 'x'
+}
+// 参照できない
+// console.log(object_a.b)
+```
+
+``` ts : useObject_02.ts
+// オブジェクトリテラル表記と言うらしい。
+let object_b: {
+  b: number
+} = {
+  b: 10
+}
+// これはOK。
+console.log(object_b.b)
+```
+
+```ts : useObject_03.ts
+let c: {
+  firstName: string
+  lastName: string
+} = {
+  firstName: 'john',
+  lastName: 'ganondorf'
+}
+class Person {
+  constructor(
+    public firstName: string,
+    public lastName: string
+  ){}
+}
+// メンバ変数の型があっていればこれでもいいらしい。
+c = new Person('hoge','piyo')
+```
+
+```ts : useObjectg_04.ts
+// 引数があったりなかったりする場合の宣言
+// [key:number]:booleanはインデックスシグネチャというらしい。
+// ただし、numberかstringでなければ宣言できない。
+let obj_c: {
+  i: number
+  s?: string
+  [key:number]:boolean
+}
+// 全部OK。
+obj_c = {i: 10}
+obj_c = {i: 10, s: 'hoge'}
+obj_c = {i: 10, 1:true}
+obj_c = {i: 10, 1:true, 100: true}
+obj_c = {i: 10, s: 'hogehoge', 1:true, 100: true}
+```
+
+``` ts : useObject_05.ts
+// readonlyを使ってみる
+let user: {
+  readonly firstName: string
+} = {
+  firstName: 'hoge'
+}
+// これはできる
+console.log(user.firstName)
+// これはできない
+// user.firstName = 'piyo'
+```
+
+## 型エイリアス
+
+型に別名をつけることができる。
+
+``` ts : src/useAlias.ts
+
+type Age = number
+
+type UseAliasPerson = {
+  name: string
+  age: Age
+}
+
+let person: UseAliasPerson = {
+  name : 'hoge',
+  age : 55
+}
+console.log('name',person.name)
+console.log('age',person.age)
+```
+
+## 合併型/交差型
+
+多重継承みたいなもんか・・・？
+
+``` ts : src/useUnionIntersection.ts
+
+type Cat = {name: string, purrs: boolean}
+type Dog = {name: string, barks: boolean, wags: boolean}
+
+// 翻訳
+// purrs:喉を鳴らす
+// barks:ほえる
+// wags:しっぽを振る
+
+type CatOrDogBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+
+// Cat
+let cat: CatOrDogBoth = {
+  name: 'Mochimaru',
+  purrs: true 
+}
+console.log(cat)
+
+// Dog
+let dog: CatOrDogBoth = {
+  name: 'Haru',
+  barks: true,
+  wags: true
+}
+console.log(dog)
+
+// 両方…？いや、やっぱり猫。
+let newCat: CatOrDogBoth = {
+  name: 'Tama',
+  purrs: true,
+  barks: false,
+  wags: true
+}
+console.log(newCat)
+
+```
+
+実行結果。宣言していない値は出ない。
+``` json
+{ name: 'Mochimaru', purrs: true }
+{ name: 'Haru', barks: true, wags: true }
+{ name: 'Tama', purrs: true, barks: false, wags: true }
+```
 
 ## その他実装中に気づいたこと
 
