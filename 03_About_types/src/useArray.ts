@@ -8,7 +8,7 @@ let array_d = [1, 'a'] // (string | number)[]
 const array_e = [2, 'b'] // (string | number)[]
 
 let array_f = ['red']
-f.push('blue')
+array_f.push('blue')
 // これはエラー。
 // f.push(true)
 
