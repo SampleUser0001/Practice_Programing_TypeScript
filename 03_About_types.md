@@ -22,6 +22,7 @@
   - [配列](#配列)
   - [タプル](#タプル)
   - [null, undefined, void, never](#null-undefined-void-never)
+  - [列挙型 : enum](#列挙型--enum)
   - [その他実装中に気づいたこと](#その他実装中に気づいたこと)
 
 ## any 
@@ -380,6 +381,35 @@ let three = bs[2]
 - void : 型が存在しない
 - never : 値が返らない
   - voidとの違いは、エラーが発生する場合や、無限ループをする場合にこちらを使う。
+
+## 列挙型 : enum
+
+``` ts : src/useEnum.ts
+
+// 値は持たせても持たせなくても宣言できる。
+enum Language {
+  Japanese = 0,
+  English = 1,
+  Spanish = 2,
+  Russian // ここは3になる。
+}
+
+const myFIrstLanguage = Language.Japanese
+let mySecondLanguage = Language['English']
+
+console.log(Language.Russian)
+
+// 分割して書くことができる。
+enum ProgramingLanguage {
+  TypeScript = 0,
+  JavaScript = 1
+}
+enum ProgramingLanguage {
+  Java = 2
+}
+```
+
+この本ではenumは非推奨らしい。
 
 ## その他実装中に気づいたこと
 
