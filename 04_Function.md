@@ -7,10 +7,13 @@
       - [デフォルトパラメータ](#デフォルトパラメータ)
     - [レストパラメータ](#レストパラメータ)
     - [call, apply, bind](#call-apply-bind)
+    - [this](#this)
+      - [無効にしたい場合](#無効にしたい場合)
 
 ## 関数の宣言
 
 戻り値の型は型推論される。
+
 ```ts
 function add(a: number, b:number) {
   return a + b
@@ -18,6 +21,7 @@ function add(a: number, b:number) {
 ```
 
 明示的に宣言もできる。
+
 ``` ts
 function add(a: number, b:number): number {
   return a + b
@@ -104,6 +108,7 @@ log2('fuga',{appId: 'appid'})
 2021-02-16T10:26:30.931Z piyo da763be
 2021-02-16T10:26:30.931Z fuga undefined
 ```
+
 …非表示になるわけじゃないのね。
 
 ### レストパラメータ
@@ -118,3 +123,17 @@ log2('fuga',{appId: 'appid'})
 
 [./04_Function/call_apply_bind/src/index.ts](./04_Function/call_apply_bind/src/index.ts)
 
+### this
+
+JavaScriptの世界では評判が良くないthis
+
+#### 無効にしたい場合
+
+tslint.jsonに設定する。
+
+``` json
+  "rules": {
+    "no-invalidthis": true
+  }
+
+```
