@@ -12,14 +12,13 @@
 
 ## init
 
-``` sh 
+``` sh
 npm init -y
 npm install --save-dev typescript tslint @types/node
 mkdir src
 touch tsconfig.json
 ```
 
-tsconfig.json
 ``` json : tsconfig.json
 {
   "compilerOptions": {
@@ -39,7 +38,7 @@ tsconfig.json
 ```json : package.json
     "build": "npm run build:ts",
     "build:ts": "tsc ",
-    "start:hoge": "node ./dist/hoge.js
+    "start:index": "node ./dist/index.js",
 ```
 
 ## 参考
