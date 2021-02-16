@@ -6,6 +6,7 @@
       - [オプションパラメータ](#オプションパラメータ)
       - [デフォルトパラメータ](#デフォルトパラメータ)
     - [レストパラメータ](#レストパラメータ)
+    - [call, apply, bind](#call-apply-bind)
 
 ## 関数の宣言
 
@@ -110,4 +111,10 @@ log2('fuga',{appId: 'appid'})
 可変個数の引数を設定できる。
 
 [./04_Function/restParameters/src/index.ts](./04_Function/restParameters/src/index.ts)
+
+### call, apply, bind
+
+リフレクション・・・？
+
+[./04_Function/call_apply_bind/src/index.ts](./04_Function/call_apply_bind/src/index.ts)
 
