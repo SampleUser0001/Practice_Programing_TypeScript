@@ -109,5 +109,5 @@ log2('fuga',{appId: 'appid'})
 
 可変個数の引数を設定できる。
 
-[./04_Function/optionParameters/src/index.ts](./04_Function/optionParameters/src/index.ts)
+[./04_Function/restParameters/src/index.ts](./04_Function/restParameters/src/index.ts)
 
