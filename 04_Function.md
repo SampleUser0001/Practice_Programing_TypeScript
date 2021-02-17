@@ -9,6 +9,7 @@
     - [call, apply, bind](#call-apply-bind)
     - [this](#this)
       - [無効にしたい場合](#無効にしたい場合)
+    - [ジェネレータ](#ジェネレータ)
 
 ## 関数の宣言
 
@@ -127,7 +128,7 @@ log2('fuga',{appId: 'appid'})
 
 JavaScriptの世界では評判が良くないthis。
 
-[./04_Functiaon/../04_Function/useThis/src/index.ts](./04_Functiaon/../04_Function/useThis/src/index.ts)
+[./04_Function/useThis/src/index.ts](./04_Function/useThis/src/index.ts)
 
 #### 無効にしたい場合
 
@@ -139,4 +140,11 @@ tslint.jsonに設定する。
   }
 
 ```
+
+### ジェネレータ
+
+値を生成するための便利な方法。  
+ジェネレータ関数によって生成される。
+
+[./04_Function/generatorFunction/src/index.ts](./04_Function/generatorFunction/src/index.ts)
 

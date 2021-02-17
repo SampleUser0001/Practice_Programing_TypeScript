@@ -35,4 +35,4 @@ touch src/index.ts
 # package.jsonに書く
 #    "build": "npm run build:ts",
 #    "build:ts": "tsc ",
-#    "start": "node ./dist/index.js",
+#    "start": "npm run build && node ./dist/index.js",
