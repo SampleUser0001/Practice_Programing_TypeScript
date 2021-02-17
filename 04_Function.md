@@ -125,7 +125,9 @@ log2('fuga',{appId: 'appid'})
 
 ### this
 
-JavaScriptの世界では評判が良くないthis
+JavaScriptの世界では評判が良くないthis。
+
+[./04_Functiaon/../04_Function/useThis/src/index.ts](./04_Functiaon/../04_Function/useThis/src/index.ts)
 
 #### 無効にしたい場合
 
@@ -137,3 +139,4 @@ tslint.jsonに設定する。
   }
 
 ```
+
