@@ -10,6 +10,7 @@
     - [this](#this)
       - [無効にしたい場合](#無効にしたい場合)
     - [ジェネレータ](#ジェネレータ)
+    - [イテレータ](#イテレータ)
 
 ## 関数の宣言
 
@@ -147,4 +148,10 @@ tslint.jsonに設定する。
 ジェネレータ関数によって生成される。
 
 [./04_Function/generatorFunction/src/index.ts](./04_Function/generatorFunction/src/index.ts)
+
+### イテレータ
+
+ジェネレータの逆。next関数で値を使用する。
+
+[./04_Function/iteratorFunction/src/index.ts](./04_Function/iteratorFunction/src/index.ts)
 
