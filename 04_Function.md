@@ -11,6 +11,7 @@
       - [無効にしたい場合](#無効にしたい場合)
     - [ジェネレータ](#ジェネレータ)
     - [イテレータ](#イテレータ)
+    - [呼び出しシグネチャ](#呼び出しシグネチャ)
 
 ## 関数の宣言
 
@@ -154,4 +155,10 @@ tslint.jsonに設定する。
 ジェネレータの逆。next関数で値を使用する。
 
 [./04_Function/iteratorFunction/src/index.ts](./04_Function/iteratorFunction/src/index.ts)
+
+### 呼び出しシグネチャ
+
+関数を型として宣言するための方法。
+
+[./04_Function/callSignature/src/index.ts](./04_Function/callSignature/src/index.ts)
 
