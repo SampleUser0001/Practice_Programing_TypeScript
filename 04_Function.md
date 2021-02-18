@@ -12,6 +12,7 @@
     - [ジェネレータ](#ジェネレータ)
     - [イテレータ](#イテレータ)
     - [呼び出しシグネチャ](#呼び出しシグネチャ)
+    - [文脈的型付け](#文脈的型付け)
 
 ## 関数の宣言
 
@@ -161,4 +162,11 @@ tslint.jsonに設定する。
 関数を型として宣言するための方法。
 
 [./04_Function/callSignature/src/index.ts](./04_Function/callSignature/src/index.ts)
+
+### 文脈的型付け
+
+文脈...?  
+サンプル的には*コールバック関数*の例を記載。
+
+[./04_Function/contextualTyping/src/index.ts](./04_Function/contextualTyping/src/index.ts)
 
