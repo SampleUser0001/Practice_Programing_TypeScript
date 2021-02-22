@@ -13,6 +13,9 @@
     - [イテレータ](#イテレータ)
     - [呼び出しシグネチャ](#呼び出しシグネチャ)
     - [文脈的型付け](#文脈的型付け)
+    - [オーバーロード](#オーバーロード)
+      - [参考](#参考)
+  - [実装時に気づいたこと](#実装時に気づいたこと)
 
 ## 関数の宣言
 
@@ -170,3 +173,18 @@ tslint.jsonに設定する。
 
 [./04_Function/contextualTyping/src/index.ts](./04_Function/contextualTyping/src/index.ts)
 
+### オーバーロード
+
+Javaのオーバーロードとだいぶ違うので注意。
+
+[./04_Function/useOverload/src/index.ts](./04_Function/useOverload/src/index.ts)
+
+#### 参考
+
+- [Qiita:Typescriptのオーバーロードまとめ](https://qiita.com/souhei-etou/items/710ef30ee748f7d18a49)
+
+## 実装時に気づいたこと
+
+- 文字列と文字列リテラルは異なる
+  - [Qiita:今すぐ知るべきTypeScriptのストリングリテラル型](https://qiita.com/ConquestArrow/items/a2a657ce19feaf12f82f)
+  - [./04_Function/useOverload/src/index.ts](./04_Function/useOverload/src/index.ts)
