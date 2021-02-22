@@ -15,6 +15,7 @@
     - [文脈的型付け](#文脈的型付け)
     - [オーバーロード](#オーバーロード)
       - [参考](#参考)
+  - [ポリモーフィズム(ジェネリック型)](#ポリモーフィズムジェネリック型)
   - [実装時に気づいたこと](#実装時に気づいたこと)
 
 ## 関数の宣言
@@ -182,6 +183,10 @@ Javaのオーバーロードとだいぶ違うので注意。
 #### 参考
 
 - [Qiita:Typescriptのオーバーロードまとめ](https://qiita.com/souhei-etou/items/710ef30ee748f7d18a49)
+
+## ポリモーフィズム(ジェネリック型)
+
+[./04_Function/usePolymophism/src/index.ts](./04_Function/usePolymophism/src/index.ts)
 
 ## 実装時に気づいたこと
 
