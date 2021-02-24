@@ -44,3 +44,4 @@ touch tsconfig.json
 ## 参考
 
 - [オライリー:プログラミングTypeScript――スケールするJavaScriptアプリケーション開発](https://www.oreilly.co.jp/books/9784873119045/)
+- [JavaScript Promiseの本](https://azu.github.io/promises-book/#introduction)

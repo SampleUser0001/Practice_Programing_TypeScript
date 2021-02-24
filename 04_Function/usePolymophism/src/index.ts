@@ -1,4 +1,3 @@
-import { Z_FILTERED } from "zlib"
 
 type Filter = {
   <T>(array: T[], f:(item: T) => boolean): T[]
@@ -36,3 +35,64 @@ function map<T, U>(array: T[], f: (item: T) => U): U[] {
   return result
 }
 
+// 4.2.3 ジェネリックの型推論
+// この場合、T -> string, U -> boolean
+console.log(map(
+  ['a','b','c'],
+  _ => _ === 'a'
+))
+
+// 4.2.4 ジェネリック型エイリアス
+// HTMLのイベントを扱う型を宣言してみる
+/**
+ * target: 対象のオブジェクト
+ * type: 発生したイベント
+ */
+type MyEvent<T> = {
+  target: T
+  type: string
+}
+// 本によるとこうなのだが、HTMLButtonElementでエラーになるのでコメントアウト。
+// type ButtonEvent = MyEvent<HTMLButtonElement>
+// let myEvent: MyEvent<HTMLButtonElement | null> = {
+//   target: document.querySelector('#myButton'),
+//   type: 'click'
+// }
+
+type TimeEvent<T> = {
+  event: MyEvent<T>
+  from: Date
+  to: Date
+}
+function triggerEvent<T>(event: TimeEvent<T>): void {
+  // 本当はなにかの処理が有る…
+}
+// triggerEvent({
+//   target: document.querySelector('#myButton'),
+//   type: 'mouseover'
+// })
+
+
+// 4.2.5 制限付きポリモーフィズム
+// 二分木を実装する。
+
+/**
+ * 通常の木
+ */
+type TreeNode = {
+  value: string
+}
+
+/**
+ * 子ノードを持っていない葉
+ */
+type LeafNode = TreeNode & {
+  isLeaf: true
+}
+
+/**
+ * 子ノードを持っているNodeTree
+ */
+type InnerNode = TreeNode & {
+  children: [TreeNode] | [TreeNode, TreeNode]
+}
