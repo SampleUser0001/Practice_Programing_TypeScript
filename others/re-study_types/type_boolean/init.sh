@@ -33,6 +33,6 @@ mkdir src
 touch src/index.ts
 
 # package.jsonに書く
-echo '    "build": "npm run build:ts",
-    "build:ts": "tsc ",
-    "start": "npm run build && node ./dist/index.js",'
+#    "build": "npm run build:ts",
+#    "build:ts": "tsc ",
+#    "start": "npm run build && node ./dist/index.js",

@@ -25,11 +25,35 @@ let dog: CatOrDogBoth = {
 }
 console.log(dog)
 
-// 両方…？いや、やっぱり猫。
+// 両方書いて良い。どちらかだけでも良い。
 let newCat: CatOrDogBoth = {
   name: 'Tama',
   purrs: true,
-  barks: false,
   wags: true
 }
 console.log(newCat)
+
+// 両方書いて良い。どちらかだけでも良い。
+let newDog: CatOrDogBoth = {
+  name: 'Pochi',
+  barks: true,
+  wags: true
+}
+console.log(newDog)
+
+let kimera01: CatOrDogBoth = {
+  name: 'huum',
+  purrs: true,
+  barks: true,
+  wags: true
+}
+console.log(kimera01)
+
+// 両方書かないとだめ。
+let kimera02: CatAndDog = {
+  name: 'catanddog',
+  purrs: true,
+  barks: true,
+  wags: true
+}
+console.log(kimera02)

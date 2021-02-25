@@ -86,6 +86,8 @@ type TreeNode = {
 /**
  * 子ノードを持っていない葉
  */
+// &は「交差」。「3.2.9.2 合併型と交差型」参照。
+// 要素的にはvalueとisLeafを持つ。
 type LeafNode = TreeNode & {
   isLeaf: true
 }
@@ -93,6 +95,13 @@ type LeafNode = TreeNode & {
 /**
  * 子ノードを持っているNodeTree
  */
+// [TreeNode, TreeNode]はタプル。
+// 要素的にはvalueとchildrenを持つ。
 type InnerNode = TreeNode & {
   children: [TreeNode] | [TreeNode, TreeNode]
 }
+
+let tree_a: TreeNode = {value: 'a'}
+// trueしか指定できないくせに宣言しないとイケないみたい。
+let tree_b: LeafNode = {value: 'b', isLeaf:true}
+let tree_c: InnerNode = {value: 'c', children:[tree_b]}
