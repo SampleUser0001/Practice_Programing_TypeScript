@@ -28,8 +28,7 @@ console.log(dog)
 // 両方書いて良い。どちらかだけでも良い。
 let newCat: CatOrDogBoth = {
   name: 'Tama',
-  purrs: true,
-  wags: true
+  purrs: true
 }
 console.log(newCat)
 
@@ -41,6 +40,7 @@ let newDog: CatOrDogBoth = {
 }
 console.log(newDog)
 
+// 両方書いて良い。
 let kimera01: CatOrDogBoth = {
   name: 'huum',
   purrs: true,
@@ -48,6 +48,11 @@ let kimera01: CatOrDogBoth = {
   wags: true
 }
 console.log(kimera01)
+
+// ただしどちらにもなれないのはダメ。
+// let newHoge: CatOrDogBoth = {
+//   name:'hoge'
+// }
 
 // 両方書かないとだめ。
 let kimera02: CatAndDog = {

@@ -102,6 +102,31 @@ type InnerNode = TreeNode & {
 }
 
 let tree_a: TreeNode = {value: 'a'}
-// trueしか指定できないくせに宣言しないとイケないみたい。
+// trueしか指定できないくせに宣言しないといけないみたい。
 let tree_b: LeafNode = {value: 'b', isLeaf:true}
 let tree_c: InnerNode = {value: 'c', children:[tree_b]}
+
+/**
+ * @param node : 変換元のオブジェクト
+ * @param f : valueを大文字にする
+ * @return T :引数と同じ型のオブジェクトを返す。
+ */
+function mapNode<T extends TreeNode>(
+  node: T,
+  f:(value: string) => string
+): T {
+  return {
+    ...node,
+    value: f(node.value)
+  }
+}
+
+console.log(tree_a)
+console.log(tree_b)
+console.log(tree_c)
+let tree_a1 = mapNode(tree_a, _ => _.toUpperCase())
+let tree_b1 = mapNode(tree_b, _ => _.toUpperCase())
+let tree_c1 = mapNode(tree_c, _ => _.toUpperCase())
+console.log(tree_a1)
+console.log(tree_b1)
+console.log(tree_c1)
