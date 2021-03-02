@@ -5,10 +5,11 @@
 
 | 章名 | リンク |
 | :-- | :-- |
-| 1章 イントロダクション | [01_Introduction.md](./01_Introduction.md) |
-| 2章 TypeScript：全体像 | [02_TypeScript_Overview.md](./02_TypeScript_Overview.md) |
+| 1章 イントロダクション | [01_Introduction](./01_Introduction.md) |
+| 2章 TypeScript：全体像 | [02_TypeScript_Overview](./02_TypeScript_Overview.md) |
 | 3章 型について | [03_About_types](./03_About_types.md) |
 | 4章 関数 | [04_Function](./04_Function.md) |
+| 5章 クラスとインターフェース | [05_Class_and_Interface](./05_Class_and_Interface.md) 
 
 ## init
 
