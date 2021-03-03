@@ -84,6 +84,8 @@ interfaceと交差型の違いの一つ。
 
 ### implements
 
+Javaのinterface, implementsと同じに見える…
 
+[./05_Class_and_Interface/useInterfaceImplements/src/index.ts](./05_Class_and_Interface/useInterfaceImplements/src/index.ts)
 
 ## 参考
