@@ -260,6 +260,8 @@ console.log('age',person.age)
 
 多重継承みたいなもんか・・・？
 
+[./03_About_types/src/useUnionIntersection.ts](./03_About_types/src/useUnionIntersection.ts)
+
 ``` ts : src/useUnionIntersection.ts
 
 type Cat = {name: string, purrs: boolean}
@@ -288,22 +290,54 @@ let dog: CatOrDogBoth = {
 }
 console.log(dog)
 
-// 両方…？いや、やっぱり猫。
+// 両方書いて良い。どちらかだけでも良い。
 let newCat: CatOrDogBoth = {
   name: 'Tama',
-  purrs: true,
-  barks: false,
-  wags: true
+  purrs: true
 }
 console.log(newCat)
 
+// 両方書いて良い。どちらかだけでも良い。
+let newDog: CatOrDogBoth = {
+  name: 'Pochi',
+  barks: true,
+  wags: true
+}
+console.log(newDog)
+
+// 両方書いて良い。
+let kimera01: CatOrDogBoth = {
+  name: 'huum',
+  purrs: true,
+  barks: true,
+  wags: true
+}
+console.log(kimera01)
+
+// ただしどちらにもなれないのはダメ。
+// let newHoge: CatOrDogBoth = {
+//   name:'hoge'
+// }
+
+// 両方書かないとだめ。
+let kimera02: CatAndDog = {
+  name: 'catanddog',
+  purrs: true,
+  barks: true,
+  wags: true
+}
+console.log(kimera02)
 ```
 
 実行結果。宣言していない値は出ない。
+
 ``` json
 { name: 'Mochimaru', purrs: true }
 { name: 'Haru', barks: true, wags: true }
-{ name: 'Tama', purrs: true, barks: false, wags: true }
+{ name: 'Tama', purrs: true }
+{ name: 'Pochi', barks: true, wags: true }
+{ name: 'huum', purrs: true, barks: true, wags: true }
+{ name: 'catanddog', purrs: true, barks: true, wags: true }
 ```
 
 ## 配列

@@ -6,6 +6,9 @@
     - [メモ](#メモ)
   - [super](#super)
   - [戻り値の型としてthisを使う](#戻り値の型としてthisを使う)
+  - [interface](#interface)
+    - [宣言のマージ](#宣言のマージ)
+    - [implements](#implements)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -65,5 +68,22 @@ class SubSet {
 
 Setクラスの使用例はこちら。  
 [./05_Class_and_Interface/useThisByReturnType/src/index.ts](./05_Class_and_Interface/useThisByReturnType/src/index.ts)
+
+## interface
+
+TypeScriptにもinterfaceは有るが、交差型でも同じことができる。
+
+[./05_Class_and_Interface/useInterface/src/index.ts](./05_Class_and_Interface/useInterface/src/index.ts)
+
+### 宣言のマージ
+
+[./05_Class_and_Interface/useInterface/src/index.ts](./05_Class_and_Interface/useInterface/src/index.ts)
+
+interfaceと交差型の違いの一つ。
+同じinterfaceを分割して宣言すると、マージされる。
+
+### implements
+
+
 
 ## 参考
