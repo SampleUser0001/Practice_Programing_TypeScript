@@ -9,7 +9,7 @@
 | 2章 TypeScript：全体像 | [02_TypeScript_Overview](./02_TypeScript_Overview.md) |
 | 3章 型について | [03_About_types](./03_About_types.md) |
 | 4章 関数 | [04_Function](./04_Function.md) |
-| 5章 クラスとインターフェース | [05_Class_and_Interface](./05_Class_and_Interface.md) 
+| 5章 クラスとインターフェース | [05_Class_and_Interface](./05_Class_and_Interface.md) |
 
 ## init
 

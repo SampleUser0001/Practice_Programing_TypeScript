@@ -18,14 +18,6 @@ class Game {
   }
 
   /**
-   * 動作確認用関数。
-   * スプレッド記法による駒の初期化がうまく動いているか確認する。
-   */
-  public static printPieces(){
-    console.log(Game.makePieces())
-  }
-
-  /**
    * 大ゴマを並べる
    * @param color 
    */
