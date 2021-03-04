@@ -105,6 +105,9 @@ TypeScriptのクラスは、**クラス名ではなく、構造によって判�
 
 ## ポリモーフィズム
 
+Javaと同じに見えるが…よくわからん。
+
+[./05_Class_and_Interface/chess_class_and_interface/src/index.ts](./05_Class_and_Interface/chess_class_and_interface/src/index.ts)
 
 
 ## 参考
