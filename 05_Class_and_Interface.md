@@ -10,6 +10,8 @@
     - [宣言のマージ](#宣言のマージ)
     - [implements](#implements)
   - [クラスの判定方法](#クラスの判定方法)
+  - [クラスは値と型の両方を宣言する](#クラスは値と型の両方を宣言する)
+  - [ポリモーフィズム](#ポリモーフィズム)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -94,5 +96,15 @@ Javaのinterface, implementsと同じに見える…
 TypeScriptのクラスは、**クラス名ではなく、構造によって判定される。**（JavaScriptに変換される都合かな…？）
 
 [./05_Class_and_Interface/classStructure/src/index.ts](./05_Class_and_Interface/classStructure/src/index.ts)
+
+## クラスは値と型の両方を宣言する
+
+??? よくわからん…
+
+[./05_Class_and_Interface/StringDatabase/src/index.ts](./05_Class_and_Interface/StringDatabase/src/index.ts)
+
+## ポリモーフィズム
+
+
 
 ## 参考
