@@ -9,6 +9,7 @@
   - [interface](#interface)
     - [宣言のマージ](#宣言のマージ)
     - [implements](#implements)
+  - [クラスの判定方法](#クラスの判定方法)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -87,5 +88,11 @@ interfaceと交差型の違いの一つ。
 Javaのinterface, implementsと同じに見える…
 
 [./05_Class_and_Interface/useInterfaceImplements/src/index.ts](./05_Class_and_Interface/useInterfaceImplements/src/index.ts)
+
+## クラスの判定方法
+
+TypeScriptのクラスは、**クラス名ではなく、構造によって判定される。**（JavaScriptに変換される都合かな…？）
+
+[./05_Class_and_Interface/classStructure/src/index.ts](./05_Class_and_Interface/classStructure/src/index.ts)
 
 ## 参考
