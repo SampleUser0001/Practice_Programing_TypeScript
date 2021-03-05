@@ -12,6 +12,8 @@
   - [クラスの判定方法](#クラスの判定方法)
   - [クラスは値と型の両方を宣言する](#クラスは値と型の両方を宣言する)
   - [ポリモーフィズム](#ポリモーフィズム)
+  - [ミックスイン](#ミックスイン)
+    - [役割指向プログラミング](#役割指向プログラミング)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -109,5 +111,20 @@ Javaと同じに見えるが…よくわからん。
 
 [./05_Class_and_Interface/chess_class_and_interface/src/index.ts](./05_Class_and_Interface/chess_class_and_interface/src/index.ts)
 
+## ミックスイン
+
+多重継承をシミュレートする。役割指向プログラミングをサポートする。
+
+[./05_Class_and_Interface/useMixin/src/index.ts](./05_Class_and_Interface/useMixin/src/index.ts)
+
+これも難しい…
+
+クラス名が出力されない。多分バージョンの問題。  
+[Github:TypeScript-issues-14099](https://github.com/microsoft/TypeScript/issues/14099)
+
+### 役割指向プログラミング
+
+クラス名ではなく、パラメータや振る舞いに注目する。  
+パラメータや振る舞いを別々に宣言して、多重継承させてクラスを作成する。
 
 ## 参考
