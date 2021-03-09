@@ -25,7 +25,7 @@ function withEZDebug<C extends ClassConstructor<{
       let value = this.getDebugValue()
       // これによってクラス名が取得できたりできなかったりする。
       // Object.setPrototypeOf(this, this)
-      // バージョンによって、親クラスの名前が取得できたり、自分のクラスの名前が取得で切りする。
+      // バージョンによって、親クラスの名前が取得できたり、自分のクラスの名前が取得できたりする。
       // 匿名クラスを返す実装なので、それを見ているっぽい。
       let className = this.constructor.name
       return className + '(' + JSON.stringify(value) + ')';
