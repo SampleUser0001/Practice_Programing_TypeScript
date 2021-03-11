@@ -131,7 +131,7 @@ Javaと同じに見えるが…よくわからん。
 ## デコレーター
 
 TypeScriptの実験的な機能。  
-
+うまく動いてくれないぞ？別の機会にやる。
 
 [./05_Class_and_Interface/useDecorater/src/index.ts](./05_Class_and_Interface/useDecorater/src/index.ts)
 
