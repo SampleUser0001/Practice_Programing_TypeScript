@@ -15,6 +15,7 @@
   - [ミックスイン](#ミックスイン)
     - [役割指向プログラミング](#役割指向プログラミング)
   - [デコレーター](#デコレーター)
+  - [finalのシミュレート](#finalのシミュレート)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -136,5 +137,11 @@ TypeScriptの実験的な機能。
 [./05_Class_and_Interface/useDecorater/src/index.ts](./05_Class_and_Interface/useDecorater/src/index.ts)
 
 [Qiita:TypeScriptによるデコレータの基礎と実践](https://qiita.com/taqm/items/4bfd26dfa1f9610128bc)
+
+## finalのシミュレート
+
+TypeScriptはfinal自体はサポートしていない。privateをうまく使う。
+
+[./05_Class_and_Interface/likeFinal/src/index.ts](./05_Class_and_Interface/likeFinal/src/index.ts)
 
 ## 参考
