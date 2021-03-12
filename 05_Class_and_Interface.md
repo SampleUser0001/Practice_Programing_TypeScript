@@ -16,6 +16,8 @@
     - [役割指向プログラミング](#役割指向プログラミング)
   - [デコレーター](#デコレーター)
   - [finalのシミュレート](#finalのシミュレート)
+  - [デザインパターン](#デザインパターン)
+    - [Factoryパターン](#factoryパターン)
   - [参考](#参考)
 
 ## チェスのプログラムを作成する
@@ -143,5 +145,12 @@ TypeScriptの実験的な機能。
 TypeScriptはfinal自体はサポートしていない。privateをうまく使う。
 
 [./05_Class_and_Interface/likeFinal/src/index.ts](./05_Class_and_Interface/likeFinal/src/index.ts)
+
+## デザインパターン
+
+### Factoryパターン
+
+[./05_Class_and_Interface/designPattern_FactoryPattern/src/index.ts](./05_Class_and_Interface/designPattern_FactoryPattern/src/index.ts)
+
 
 ## 参考
