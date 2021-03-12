@@ -18,7 +18,7 @@
   - [finalのシミュレート](#finalのシミュレート)
   - [デザインパターン](#デザインパターン)
     - [Factoryパターン](#factoryパターン)
-  - [参考](#参考)
+    - [Builderパターン](#builderパターン)
 
 ## チェスのプログラムを作成する
 
@@ -152,5 +152,7 @@ TypeScriptはfinal自体はサポートしていない。privateをうまく使�
 
 [./05_Class_and_Interface/designPattern_FactoryPattern/src/index.ts](./05_Class_and_Interface/designPattern_FactoryPattern/src/index.ts)
 
+### Builderパターン
 
-## 参考
+[./05_Class_and_Interface/designPattern_BuilderPattern/src/index.ts](./05_Class_and_Interface/designPattern_BuilderPattern/src/index.ts)
+
