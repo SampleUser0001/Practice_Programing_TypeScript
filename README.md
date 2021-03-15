@@ -46,3 +46,4 @@ touch tsconfig.json
 
 - [オライリー:プログラミングTypeScript――スケールするJavaScriptアプリケーション開発](https://www.oreilly.co.jp/books/9784873119045/)
 - [JavaScript Promiseの本](https://azu.github.io/promises-book/#introduction)
+- [TypeScript Deep Dive 日本語版について](https://typescript-jp.gitbook.io/deep-dive/)
