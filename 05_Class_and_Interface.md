@@ -13,6 +13,8 @@
   - [クラスは値と型の両方を宣言する](#クラスは値と型の両方を宣言する)
   - [ポリモーフィズム](#ポリモーフィズム)
   - [ミックスイン](#ミックスイン)
+    - [他の例](#他の例)
+      - [参考](#参考)
     - [役割指向プログラミング](#役割指向プログラミング)
   - [デコレーター](#デコレーター)
   - [finalのシミュレート](#finalのシミュレート)
@@ -125,6 +127,14 @@ Javaと同じに見えるが…よくわからん。
 
 クラス名が出力されない。多分バージョンの問題。  
 [Github:TypeScript-issues-14099](https://github.com/microsoft/TypeScript/issues/14099)
+
+### 他の例
+
+[./others/restudy_mixin/src/index.ts](./others/restudy_mixin/src/index.ts)
+
+#### 参考
+
+- [TypeScript Deep Dive 日本語版:ミックスイン](https://typescript-jp.gitbook.io/deep-dive/type-system/mixins)
 
 ### 役割指向プログラミング
 
