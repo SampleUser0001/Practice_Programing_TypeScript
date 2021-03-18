@@ -50,6 +50,12 @@ TypeScriptは構造でクラスを判断するが、構造が同じでもプロ�
 
 [./06_AdvancedTypes/typeRefinement/src/index.ts](./06_AdvancedTypes/typeRefinement/src/index.ts)
 
+### タグ付け合併型
+
+うまく実装できないな？
+
+[./06_AdvancedTypes/tagUnion/src/index.ts](./06_AdvancedTypes/tagUnion/src/index.ts)
+
 ## 備考
 
 - null, undefined, NaN, 0, -0, "", falseはfalseと判定される。それ以外はtrueと判定される。
