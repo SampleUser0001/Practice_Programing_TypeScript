@@ -14,6 +14,10 @@
 
 [./06_AdvancedTypes/varianceFunction/src/index.ts](./06_AdvancedTypes/varianceFunction/src/index.ts)
 
+### 参考
+
+- [Qiita:なぜ TypeScript の型システムが健全性を諦めているか](https://qiita.com/na-o-ys/items/aa56d678cdf0de2bdd79)
+
 ## 型の拡大
 
 できればtypeofしたときにイミュータブルであることを表示してほしいんですが。
@@ -42,6 +46,10 @@ TypeScriptは構造でクラスを判断するが、構造が同じでもプロ�
 
 本によると「なんかこういう仕様があるらしい」くらいの認識でいいらしい。
 
-### 参考
+### 型の絞り込み(refinement)
 
-- [Qiita:なぜ TypeScript の型システムが健全性を諦めているか](https://qiita.com/na-o-ys/items/aa56d678cdf0de2bdd79)
+[./06_AdvancedTypes/typeRefinement/src/index.ts](./06_AdvancedTypes/typeRefinement/src/index.ts)
+
+## 備考
+
+- null, undefined, NaN, 0, -0, "", falseはfalseと判定される。それ以外はtrueと判定される。
