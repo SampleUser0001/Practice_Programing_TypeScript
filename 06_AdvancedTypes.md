@@ -1,5 +1,18 @@
 # 6章 高度な型
 
+- [6章 高度な型](#6章-高度な型)
+  - [変性(variance)](#変性variance)
+    - [オブジェクトのメンバ変数](#オブジェクトのメンバ変数)
+    - [関数](#関数)
+    - [参考](#参考)
+  - [型の拡大](#型の拡大)
+    - [constアサーション](#constアサーション)
+    - [過剰プロパティチェック(Freshness)](#過剰プロパティチェックfreshness)
+    - [型の絞り込み(refinement)](#型の絞り込みrefinement)
+    - [タグ付け合併型](#タグ付け合併型)
+  - [完全性](#完全性)
+  - [備考](#備考)
+
 ## 変性(variance)
 
 オブジェクトに対する操作などで、変数の型が変わってしまうこと。
@@ -55,6 +68,15 @@ TypeScriptは構造でクラスを判断するが、構造が同じでもプロ�
 うまく実装できないな？
 
 [./06_AdvancedTypes/tagUnion/src/index.ts](./06_AdvancedTypes/tagUnion/src/index.ts)
+
+## 完全性
+
+すべての分岐を実装できているか判断してくれる。  
+本来returnがないとNGなときなどにワーニングを上げたりしてくれる。
+
+[./06_AdvancedTypes/totality/src/index.ts](./06_AdvancedTypes/totality/src/index.ts)
+
+TSCフラグ：noImplicitReturnsを有効にするともっと厳しくしてくれる。
 
 ## 備考
 
