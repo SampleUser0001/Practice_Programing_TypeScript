@@ -11,6 +11,9 @@
     - [型の絞り込み(refinement)](#型の絞り込みrefinement)
     - [タグ付け合併型](#タグ付け合併型)
   - [完全性](#完全性)
+  - [高度なオブジェクト型](#高度なオブジェクト型)
+    - [型演算](#型演算)
+      - [ルックアップ型](#ルックアップ型)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -77,6 +80,16 @@ TypeScriptは構造でクラスを判断するが、構造が同じでもプロ�
 [./06_AdvancedTypes/totality/src/index.ts](./06_AdvancedTypes/totality/src/index.ts)
 
 TSCフラグ：noImplicitReturnsを有効にするともっと厳しくしてくれる。
+
+## 高度なオブジェクト型
+
+### 型演算
+
+#### ルックアップ型
+
+型の一部分をstringや型を指定して、別の型として宣言できる。
+
+[./06_AdvancedTypes/typeLookup/src/index.ts](./06_AdvancedTypes/typeLookup/src/index.ts)
 
 ## 備考
 
