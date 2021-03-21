@@ -14,6 +14,7 @@
   - [高度なオブジェクト型](#高度なオブジェクト型)
     - [型演算](#型演算)
       - [ルックアップ型](#ルックアップ型)
+      - [keyof](#keyof)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -90,6 +91,10 @@ TSCフラグ：noImplicitReturnsを有効にするともっと厳しくしてく
 型の一部分をstringや型を指定して、別の型として宣言できる。
 
 [./06_AdvancedTypes/typeLookup/src/index.ts](./06_AdvancedTypes/typeLookup/src/index.ts)
+
+#### keyof
+
+勉強中。
 
 ## 備考
 
