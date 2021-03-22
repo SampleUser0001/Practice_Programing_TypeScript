@@ -14,7 +14,8 @@
   - [高度なオブジェクト型](#高度なオブジェクト型)
     - [型演算](#型演算)
       - [ルックアップ型](#ルックアップ型)
-      - [keyof](#keyof)
+      - [keyof演算子](#keyof演算子)
+    - [レコード型](#レコード型)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -92,7 +93,7 @@ TSCフラグ：noImplicitReturnsを有効にするともっと厳しくしてく
 
 [./06_AdvancedTypes/typeLookup/src/index.ts](./06_AdvancedTypes/typeLookup/src/index.ts)
 
-#### keyof
+#### keyof演算子
 
 ``` typescript
 type ColorsOriginal = {
@@ -112,6 +113,12 @@ console.log(color)
 [./06_AdvancedTypes/keyof/src/index.ts](./06_AdvancedTypes/keyof/src/index.ts)
 
 - [https://typescript-jp.gitbook.io/deep-dive/type-system/moving-types#knokyapucha](https://typescript-jp.gitbook.io/deep-dive/type-system/moving-types#knokyapucha)
+
+### レコード型
+
+Mapに見えるが、Mapは別にあるらしい。
+
+[./06_AdvancedTypes/recodeType/src/index.ts](./06_AdvancedTypes/recodeType/src/index.ts)
 
 ## 備考
 
