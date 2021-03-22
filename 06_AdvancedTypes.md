@@ -94,7 +94,24 @@ TSCフラグ：noImplicitReturnsを有効にするともっと厳しくしてく
 
 #### keyof
 
-勉強中。
+``` typescript
+type ColorsOriginal = {
+  red: 'RED'
+  blue: 'BLUE'
+}
+
+// red,blueをキーとして持っている型から、'red' | 'blue'型を生成
+type Colors = keyof ColorsOriginal;
+let color: Colors
+color = 'red'
+console.log(color)
+color = 'blue'
+console.log(color)
+```
+
+[./06_AdvancedTypes/keyof/src/index.ts](./06_AdvancedTypes/keyof/src/index.ts)
+
+- [https://typescript-jp.gitbook.io/deep-dive/type-system/moving-types#knokyapucha](https://typescript-jp.gitbook.io/deep-dive/type-system/moving-types#knokyapucha)
 
 ## 備考
 
