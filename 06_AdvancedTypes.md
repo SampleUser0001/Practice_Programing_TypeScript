@@ -17,6 +17,7 @@
       - [keyof演算子](#keyof演算子)
     - [レコード型](#レコード型)
     - [マップ型](#マップ型)
+    - [コンパニオンオブジェクトパターン](#コンパニオンオブジェクトパターン)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -128,16 +129,23 @@ Mapに見えるが、Mapは別にあるらしい。
 [./06_AdvancedTypes/mapType/src/index.ts](./06_AdvancedTypes/mapType/src/index.ts)
 
 いくつかデフォルトで用意されている。
-- Record<Keys, Values>
+- Record\<Keys, Values\>
   - Keys型のキーとValues型の値を持つオブジェクト。
-- Partial<Object>
+- Partial\<Object\>
   - Object内のすべてのフィールドを省略可能と指定します。
-- Required<Object>
+- Required\<Object\>
   - Object内のすべてのフィールドを必須（省略不可）と指定します。
-- Readonly<Object>
+- Readonly\<Object\>
   - Object内のすべてのフィールドを読み取り専用と指定します。
-- Pick<Object, Keys>
+- Pick\<Object, Keys\>
   - 指定されたKeysだけを持つ、Objectのサブタイプを返します。
+
+### コンパニオンオブジェクトパターン
+
+型名と変数名で同じ名前が使える。  
+用途がよくわからない…
+
+[./06_AdvancedTypes/companionObjectPattern/src/index.ts](./06_AdvancedTypes/companionObjectPattern/src/index.ts)
 
 ## 備考
 
