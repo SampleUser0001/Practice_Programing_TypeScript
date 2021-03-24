@@ -21,6 +21,7 @@
   - [関数にまつわる高度な型](#関数にまつわる高度な型)
     - [タプルについての型推論の改善](#タプルについての型推論の改善)
     - [ユーザ定義型ガード](#ユーザ定義型ガード)
+  - [条件型](#条件型)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -163,6 +164,12 @@ Mapに見えるが、Mapは別にあるらしい。
 型の絞り込みは通常、スコープ内でしか働かないが、それを持ち出せる。
 
 [./06_AdvancedTypes/userDefinedTypeGuard/src/index.ts](./06_AdvancedTypes/userDefinedTypeGuard/src/index.ts)
+
+## 条件型
+
+型の割り当て自体を条件式として使用できる。
+
+[./06_AdvancedTypes/conditionalType/src/index.ts](./06_AdvancedTypes/conditionalType/src/index.ts)
 
 ## 備考
 
