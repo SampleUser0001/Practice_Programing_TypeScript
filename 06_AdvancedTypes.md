@@ -18,6 +18,9 @@
     - [レコード型](#レコード型)
     - [マップ型](#マップ型)
     - [コンパニオンオブジェクトパターン](#コンパニオンオブジェクトパターン)
+  - [関数にまつわる高度な型](#関数にまつわる高度な型)
+    - [タプルについての型推論の改善](#タプルについての型推論の改善)
+    - [ユーザ定義型ガード](#ユーザ定義型ガード)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -146,6 +149,20 @@ Mapに見えるが、Mapは別にあるらしい。
 用途がよくわからない…
 
 [./06_AdvancedTypes/companionObjectPattern/src/index.ts](./06_AdvancedTypes/companionObjectPattern/src/index.ts)
+
+## 関数にまつわる高度な型
+
+### タプルについての型推論の改善
+
+全然わからん。
+
+[./06_AdvancedTypes/typeInterface/src/index.ts](./06_AdvancedTypes/typeInterface/src/index.ts)
+
+### ユーザ定義型ガード
+
+型の絞り込みは通常、スコープ内でしか働かないが、それを持ち出せる。
+
+[./06_AdvancedTypes/userDefinedTypeGuard/src/index.ts](./06_AdvancedTypes/userDefinedTypeGuard/src/index.ts)
 
 ## 備考
 
