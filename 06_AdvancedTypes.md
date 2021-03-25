@@ -24,6 +24,8 @@
   - [条件型](#条件型)
     - [分配条件型](#分配条件型)
     - [inferキーワード](#inferキーワード)
+    - [組み込みの条件型](#組み込みの条件型)
+      - [参考](#参考-1)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -180,6 +182,17 @@ Mapに見えるが、Mapは別にあるらしい。
 ### inferキーワード
 
 [./06_AdvancedTypes/inferKeyword/src/index.ts](06_AdvancedTypes/inferKeyword/src/index.ts)
+
+### 組み込みの条件型
+
+難しいことしなくても使える!
+
+[06_AdvancedTypes/builtInConditionalType/src/index.ts](06_AdvancedTypes/builtInConditionalType/src/index.ts)
+
+#### 参考
+
+- ReturnType
+  - [ひと夏の技術TypeScriptで関数の返り値を型に変換する(ReturnTypeを使う)](https://tech-1natsu.hatenablog.com/entry/2018/12/09/004338)
 
 ## 備考
 
