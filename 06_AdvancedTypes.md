@@ -23,6 +23,7 @@
     - [ユーザ定義型ガード](#ユーザ定義型ガード)
   - [条件型](#条件型)
     - [分配条件型](#分配条件型)
+    - [inferキーワード](#inferキーワード)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -175,6 +176,10 @@ Mapに見えるが、Mapは別にあるらしい。
 ### 分配条件型
 
 [./06_AdvancedTypes/distributionConditionalType/src/index.ts](./06_AdvancedTypes/distributionConditionalType/src/index.ts)
+
+### inferキーワード
+
+[./06_AdvancedTypes/inferKeyword/src/index.ts](06_AdvancedTypes/inferKeyword/src/index.ts)
 
 ## 備考
 
