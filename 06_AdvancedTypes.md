@@ -204,7 +204,15 @@ Mapに見えるが、Mapは別にあるらしい。
 
 [./06_AdvancedTypes/typeAssertion/src/index.ts](./06_AdvancedTypes/typeAssertion/src/index.ts)
 
+### 非Nullアサーション
 
+null や undefinedの可能性がある値を普通に参照しようとするとエラーになるが、それを回避する。
+
+[./06_AdvancedTypes/notNullAssertion/src/index.ts](./06_AdvancedTypes/notNullAssertion/src/index.ts)
+
+#### 参考
+
+- [TypeScript Deep Dialog:strictNullChecks](https://typescript-jp.gitbook.io/deep-dive/intro/strictnullchecks#nullasshonnon-null-assertion-operator)
 
 ## 備考
 
