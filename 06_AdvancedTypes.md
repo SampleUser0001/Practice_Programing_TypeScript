@@ -194,6 +194,18 @@ Mapに見えるが、Mapは別にあるらしい。
 - ReturnType
   - [ひと夏の技術TypeScriptで関数の返り値を型に変換する(ReturnTypeを使う)](https://tech-1natsu.hatenablog.com/entry/2018/12/09/004338)
 
+## エスケープハッチ
+
+型が安全であることを示せない（示している余裕がない）ときに使用する。あまり使ってはいけない。
+
+### 型アサーション
+
+無理やり別の型であると主張する。
+
+[./06_AdvancedTypes/typeAssertion/src/index.ts](./06_AdvancedTypes/typeAssertion/src/index.ts)
+
+
+
 ## 備考
 
 - null, undefined, NaN, 0, -0, "", falseはfalseと判定される。それ以外はtrueと判定される。
