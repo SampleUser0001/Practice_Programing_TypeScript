@@ -214,6 +214,12 @@ null や undefinedの可能性がある値を普通に参照しようとする�
 
 - [TypeScript Deep Dialog:strictNullChecks](https://typescript-jp.gitbook.io/deep-dive/intro/strictnullchecks#nullasshonnon-null-assertion-operator)
 
+### 明確な割当アサーション
+
+明確な割当(スコープ内で初期化)がない場合、値を参照しようとするとエラーになるが、それを回避する。
+
+[./06_AdvancedTypes/clearAssignmentAssertion/src/index.ts](./06_AdvancedTypes/clearAssignmentAssertion/src/index.ts)
+
 ## 備考
 
 - null, undefined, NaN, 0, -0, "", falseはfalseと判定される。それ以外はtrueと判定される。
