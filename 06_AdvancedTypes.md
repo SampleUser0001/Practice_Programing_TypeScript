@@ -26,6 +26,12 @@
     - [inferキーワード](#inferキーワード)
     - [組み込みの条件型](#組み込みの条件型)
       - [参考](#参考-1)
+  - [エスケープハッチ](#エスケープハッチ)
+    - [型アサーション](#型アサーション)
+    - [非Nullアサーション](#非nullアサーション)
+      - [参考](#参考-2)
+    - [明確な割当アサーション](#明確な割当アサーション)
+  - [名前型をシミュレートする](#名前型をシミュレートする)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -151,7 +157,7 @@ Mapに見えるが、Mapは別にあるらしい。
 ### コンパニオンオブジェクトパターン
 
 型名と変数名で同じ名前が使える。  
-用途がよくわからない…
+[名前型のシミュレーション](#名前型をシミュレートする)で使う。
 
 [./06_AdvancedTypes/companionObjectPattern/src/index.ts](./06_AdvancedTypes/companionObjectPattern/src/index.ts)
 
@@ -219,6 +225,24 @@ null や undefinedの可能性がある値を普通に参照しようとする�
 明確な割当(スコープ内で初期化)がない場合、値を参照しようとするとエラーになるが、それを回避する。
 
 [./06_AdvancedTypes/clearAssignmentAssertion/src/index.ts](./06_AdvancedTypes/clearAssignmentAssertion/src/index.ts)
+
+## 名前型をシミュレートする
+
+これを…
+
+``` typescript
+type CompanyID = string
+type OrderID = string
+type UserID = string
+type ID = CompanyID | OrderID | UserID
+
+// UserIDとか言っているが、実際にはstringなので、CompanyID, OrderIDとの違いが分からんので、実はUserID以外も引数に渡せてしまう。
+function queryForUser(id: UserID){
+  // ...
+}
+```
+
+[こう。](06_AdvancedTypes/simurateNameType/src/index.ts)
 
 ## 備考
 
