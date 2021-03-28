@@ -32,6 +32,7 @@
       - [参考](#参考-2)
     - [明確な割当アサーション](#明確な割当アサーション)
   - [名前型をシミュレートする](#名前型をシミュレートする)
+  - [プロトタイプの拡張](#プロトタイプの拡張)
   - [備考](#備考)
 
 ## 変性(variance)
@@ -243,6 +244,18 @@ function queryForUser(id: UserID){
 ```
 
 [こう。](06_AdvancedTypes/simurateNameType/src/index.ts)
+
+## プロトタイプの拡張
+
+Arrayを拡張してzip関数を追加する。
+[06_AdvancedTypes/extendPrototype/src/zip.ts](06_AdvancedTypes/extendPrototype/src/zip.ts)
+
+そのままだとプロジェクトのすべてのArrayが拡張されている。zip.tsをimportした時だけ使えるようにしたい。  
+tsconfig.jsonを修正する。  
+[06_AdvancedTypes/extendPrototype/tsconfig.json](06_AdvancedTypes/extendPrototype/tsconfig.json)
+
+実際に使う。  
+[06_AdvancedTypes/extendPrototype/src/index.ts](06_AdvancedTypes/extendPrototype/src/index.ts)
 
 ## 備考
 
