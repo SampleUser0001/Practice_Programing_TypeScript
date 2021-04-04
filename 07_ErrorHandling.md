@@ -22,3 +22,10 @@ throwsの代替
 
 [./07_ErrorHandling/returnException/src/index.ts](./07_ErrorHandling/returnException/src/index.ts)
 
+## Option型
+
+値の代わりにコンテナを返す。
+
+本来JavaScriptでは実装されていない。
+
+[07_ErrorHandling/optionType/src/index.ts](07_ErrorHandling/optionType/src/index.ts)
