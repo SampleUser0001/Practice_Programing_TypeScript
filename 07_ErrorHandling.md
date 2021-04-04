@@ -15,3 +15,10 @@
 ただしthrowsは使えない。
 
 [./07_ErrorHandling/throwException/src/index.ts](./07_ErrorHandling/throwException/src/index.ts)
+
+## 例外をreturnする
+
+throwsの代替
+
+[./07_ErrorHandling/returnException/src/index.ts](./07_ErrorHandling/returnException/src/index.ts)
+
