@@ -12,4 +12,6 @@
 
 ## 例外をthrowする
 
+ただしthrowsは使えない。
+
 [./07_ErrorHandling/throwException/src/index.ts](./07_ErrorHandling/throwException/src/index.ts)
