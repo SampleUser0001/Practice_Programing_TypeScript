@@ -29,3 +29,5 @@ throwsの代替
 本来JavaScriptでは実装されていない。
 
 [07_ErrorHandling/optionType/src/index.ts](07_ErrorHandling/optionType/src/index.ts)
+
+だめだわからん・・・
