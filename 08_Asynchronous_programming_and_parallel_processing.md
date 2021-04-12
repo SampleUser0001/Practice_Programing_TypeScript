@@ -8,6 +8,7 @@
   - [非同期プログラミング](#非同期プログラミング)
     - [イベントエミッター](#イベントエミッター)
       - [参考](#参考)
+    - [型安全なマルチスレッディング](#型安全なマルチスレッディング)
 
 ## イベントループ
 
@@ -52,3 +53,10 @@ await = then, async内で使用する必要がある。
 #### 参考
 
 - [Typesafe Event Emitter:TypeScript Deep Dive 日本語版](https://typescript-jp.gitbook.io/deep-dive/main-1/typed-event)
+
+### 型安全なマルチスレッディング
+
+これもよくわからん・・・
+
+[08_Asynchronous_programming_and_parallel_processing/typeSafeMultiThreading/src/MainThread.ts](08_Asynchronous_programming_and_parallel_processing/typeSafeMultiThreading/src/MainThread.ts)
+
